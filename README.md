@@ -85,3 +85,4 @@ Note: You can have list nested inside of each other.
 | span | Also used for styling |
 | GET method | Obtaining info from the user |
 | POST method | Similar to the GET method but more secure |
+| | |
