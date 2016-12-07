@@ -5,11 +5,10 @@
 ## What is HTML?
 “HyperText Markup Language”
 
-###Tags
-
 ### Chapter 1 "Structure"
 
-Elements in html are call tags. Every element is placed inside of &gt; &lt;.
+Elements in html are call tags. Every element is placed inside of &lt; &gt;
+
 | *element* | *What it Does* |
 | --- | --- |
 | html | Document type |
@@ -67,14 +66,45 @@ Note: You can have list nested inside of each other.
 | *element* | *What it Does* |
 | --- | --- |
 | a | Anchor used for redirecting the user to specific areas. |
-| a href | Redirecting to a url or file |
-
+| a href | Redirecting to a url or file.|
+| mailto | To create a link that opens someones email.  For Example: &lt;a href-"mailto:charlie.freeman@ksquarelabs.com"&gt; Email Charlie&lt;/a&gt; |
+| target | Opens a new window. Example: &lt;a href-"http://theartofdesignstudio.com" target-"_blank"&gt;The Art of Design&lt;/a&gt;|
+| id | Links to a specific part of a page for example: &lt;h1 id-"top"&gt;Top of Page&lt;/h1&gt; Note: the "top" is actually what the button is called by html and what it knows to link to. The "Top of Page" is what the button looks like. |
+The value of the href attribute starts with
+the # symbol Example: &lt;a href="#top"&gt;Top&lt;/a&gt;
 
 ### Chapter 5 "Images"
 
 | *element* | *What it Does* |
 | --- | --- |
 | img src | Linking images |
+| alt | Text description of the image. |
+| title | To give additional info. |
+| Width & Height | &lt;img src="imagePlace.jpg" alt -"title of image " width="600" height="300"/&gt; Note: Is measured in px. |
+| figure | Can have more than one image & info. |
+| figcaption | Creates text as a caption. |
+
+Note: Images must be saved as .jpeg, .gif, .png.
+Resolution for web is 72 ppi.
+
+Stock photos:
+www.istockphoto.com,
+www.gettyimages.com,
+www.veer.com,
+www.sxc.hu,
+www.fotolia.com
+
+### Chapter 6 "Tables"
+
+| *element* | *What it Does* |
+| --- | --- |
+| table | Creating a table. |
+| th | Table Head |
+| tr | Table Row |
+| td | Table Data |
+| td colspan | Expands the column out by "number here". Example &lt;td colspan="2"&gt;Geography&lt;/td&gt; |
+| tb rowspan | Expands the row by "number here" &lt;td rowspan="2"&gt;Movie&lt;/td&gt;|
+Long Tables - can be divided by thead, tbody, and tfoot. This keeps your table organized. Also having it this way makes it more clear when read with a screen reader.
 
 ### Other NOTES
 
