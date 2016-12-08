@@ -346,3 +346,85 @@ and :first-line
 ###### Responding to users
 :hover, :action, :focus
 Focus occurs when a browser discovers you are ready to interact.
+
+### Chapter 13 "Boxes"
+###### Box Dimensions
+width, height
+
+Can use: pixels, percentages, ems
+em the size of the box is based on the text that is inside.
+
+###### Limiting Width
+min-width, max-width & min-height, max-height
+Can be used to limit the view of a box.
+
+###### Overflowing Content
+overflow: hidden;
+
+Overflow is when a box contains more info than is displayed.
+
+(hidden, scroll)
+
+Border: border on a box.
+Margin: outside edge of the border.
+Padding: space between the border of a box and content contained within.
+
+###### Border Width
+(thin, medium, thick, px, and boarder top,right, bottom, left)
+
+###### Border style
+border-style: solid, dotted, dashed, double, groove, ridge, inset, outset, hidden/none. Note you can change individual sides such as top, bottom, left, and right.
+
+###### Border-color: #000000;
+
+###### Shorthand border
+pg: 312
+
+###### Border Padding
+padding: 10px;
+
+margin: 32px;
+
+###### Change Inline/block display
+(inline, block, inline-block, none)
+
+###### Hiding Boxes
+visibility: hidden;  
+
+or visible
+
+###### border-image
+stretch, repeat, round
+
+###### box-shadow
+(horizontal offset, vertical offset, blur distance, spread of shadow)
+
+###### round corner
+border-top-right-radius  : This changes each edge differently
+border-radius: 3px, 12px, 2px, 5px;
+or em
+
+### Chapter 14 "List, Tables, and Forms"
+ list-style-type
+
+ Unordered Lists:(none, disc, circle, square)
+ Ordered Lists: (decimal, decimal-leading zero, lower-alpha, lower-roman, upper-roman)
+
+ ###### list-style-image: url("imageurlhere.jpg");
+
+ ###### list-style-position: outside;
+ (outside, inside)
+
+###### Table Properties
+width, padding, text-transform, letter-spacing, font-size, border-top, border-bottom, text-align, background-color, :hover
+
+###### Border on Empty Cells
+show, hide, inherit
+
+###### Gaps between Cells
+border-spacing: 5px 29px; , border-collapse: collapse or separate
+
+###### For aligning Form Info see 345-346
+
+###### cursor styles
+auto, crosshair, default, pointer, move, text, wait, help, url("cursor.gif"):
