@@ -199,3 +199,150 @@ You can list multiple source of audio files by &lt;source src="audio-here.mp3"/&
 | span | Also used for styling |
 | GET method | Obtaining info from the user |
 | POST method | Similar to the GET method but more secure |
+
+## CSS
+
+### Chapter "Intro to CSS"
+
+External CSS: This is where the CSS and HTML are separate from each other. Example of setting up in html as follows:
+
+&lt;link href-"css/styles.css" type-"text/css" rel-"stylesheet" />
+
+Internal CSS: This is where the CSS code is paced inside of the HTML code.
+
+###### Example as follows inside of html:
+
+(html)
+
+&lt;head&gt;
+
+&lt;style type-"text/css"&gt;
+
+      (css)
+          body {
+
+              font-family: helvetica;
+
+              background-color: #DC143C;}
+
+            h6 {
+
+              font-color: #7FFF00;
+
+            }
+
+(html)
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+###### Inheritance
+Can apply things such as a font family to large elements such as the body or whole page. Example pg:240
+
+### Chapter 11 "Color"
+
+RGB: red, green, blue rgb(100, 100, 100)
+Hex Codes: 6 digit code  color: #ee3e80
+Color Names: 147 predefined colors
+
+element { background-color: #ee3e80;}
+
+Hue: Is the near to the colloquial idea of color.
+Saturation: gray in a color.
+Brightness or Value: How much black is in a color.
+Lightness: How much white is in a color.
+Contrast: the visibility of color on top of another color.
+
+Opacity: The amount you can see through.
+RGBA: red, green, blue, alpha. Alpha refers to the transparency.
+
+###### CSS3: HSL & HSLA for color
+Alternative to specify color.
+Hue, Saturation, Lightness, alpha
+
+Example: backgound-color: hsla(0, 100%, 100%, .5);
+
+### Chapter 12 "Text"
+Example: pg 293-296
+###### font-family: Helvetica;
+Font Types:
+
+Serif: have extra details of main strokes.
+Sans-serif: straight ends to letters.
+Monospace: every letter is the same width.
+
+Weight, Style, Stretch
+
+Note: Is important to use a standard font because browsers will usually use fonts installed on that users computer.
+Good Fonts to use: Georgia, Times, Times New Roman, Arial, Verdana, Helvetica, Courier, Courier New, Comic Sans MS, Monotype Corsiva, Impact, Haettenschwaller
+
+###### font-size:
+    pixels (: 12px;), percentages (: 100%;), Ems (: 1.3;)
+
+    Note: EMS is equal to the width of a letter.
+
+###### @font-face
+This allows you to use a font that might not be on someones computer.
+
+    @font-face {
+      font-family: 'downloaded font name here';
+      src: url('font/dafont.eot');}
+    p, {
+      font-family: downloaded font name here;
+    }
+
+###### font formats
+eot, woff, ttf/otf, svg
+
+You need these different file formats for your font to work on different browser types. To convert to different types you can use www.fontsquirrel.com/
+fontface/generator
+
+###### font-weight
+font-weight: bold;
+
+(bold, normal, italic, oblique)
+
+###### Uppercase & Lowercase
+text-transform: uppercase;
+ (uppercase, lowercase, capitalize)
+
+###### Underline & Strike
+text-decoration: underline;
+(underline, overline, line-through, blink, none)
+
+###### Leading
+line-height: 1.4em;
+
+###### Letter & Word Spacing
+letter-spacing: .2em;
+word-spacing: 1em;
+
+Note: Kerning
+
+###### Alignment
+text-align: left;
+(left, right, center, justify)
+
+###### Vertical Alignment
+vertical-align: baseline;
+(baseline, sub, super, top, text-top, middle, bottom, text-bottom)
+
+###### Indenting Text
+text-indent: -9999px;
+
+##### Drop Shadow
+text-shadow: -1px -3px 2px #000000;
+First indicates left/right, second top/bottom, third amount of blur, fourth color of drop shadow.
+
+###### First Letter or Line
+p.intro:first-letter { font-weight: bold;}
+
+and :first-line
+
+###### styling links
+:link is to set a style to a link not yet visited, :visited allows you to set a style to a link already visited.
+
+###### Responding to users
+:hover, :action, :focus
+Focus occurs when a browser discovers you are ready to interact.
