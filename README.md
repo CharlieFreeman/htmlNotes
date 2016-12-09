@@ -566,3 +566,42 @@ Grouping together related elements.
 #### Helping Older Browsers Understand
 Uses JavaScript HTML5 shiv or HTML5 shim
 Example: 442 Should ask about.
+
+# CSS3 The Missing Manual
+#### Notes From the Book
+For beginners in html
+(www.htmldog.com/guides/htmlbeginner)
+
+W3Schools (www.w3schools.com/html)
+The &lt;html&gt; tells a browser what language is spoken for the page.
+
+To Follow along: www.sawmac.com/css3/
+
+###Chapter 1 HTML for CSS
+Html to organize and Css to look good.
+
+NOTE: For a tutorial on HTML, visit www.w3schools.com/html/html_intro.asp. For a quick list of all available
+HTML tags, visit Sitepoint.com’s HTML reference at http://reference.sitepoint.com/html.
+
+&lt;div&gt; for division.
+
+&lt;span&gt; is used for inline elements such as words or phrases. Example: &lt;span class="Something"&gt; or &lt;span this="Words_Here.com"&gt;
+
+&lt;figure&gt; &lt;figcaption&gt; caption used to describe an image or illustration.
+
+Don’t use the &lt;b&gt; and &lt;i&gt; tags to emphasize text.
+But you can use these if you're just want to italicize or bold font.
+
+http://validator.w3.org is a good site to validate your page.(html only?)
+
+### Chapter 2 "Creating Styles & Style Sheets"
+
+PG:35 TIP: Some people learn better by doing rather than reading.Ifyou’dliketotryyourhandatcreatingstyles and style sheets first and then come back here to read up on what you just did, turn to page 43 for a hands-on tutorial.
+
+External Style Sheets unified design and a quicker load time.
+
+Internal Style Sheets easy to add to web pages but when you want to make changes to a style you're going to have to update all of you webpages. (Because you had to copy and past it into each individual page.) So far my personal opinion is that External Style Sheets are better....
+
+Note: You can place an internal style after the title but most put it after the head. FYI: &lt;style&gt; is required for an HTML5 doc.
+
+Last page: 43
