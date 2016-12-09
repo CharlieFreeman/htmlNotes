@@ -428,3 +428,63 @@ border-spacing: 5px 29px; , border-collapse: collapse or separate
 
 ###### cursor styles
 auto, crosshair, default, pointer, move, text, wait, help, url("cursor.gif"):
+
+### Chapter 15 "Layout"
+###### Normal Flow
+position: static;
+This stretches the width of the browser window by default.
+
+###### position: relative;
+top: 23px;
+left: 10px;
+
+Allows you to offset blocks of text.
+
+###### position: absolute;
+
+Allows you to create text that is positioned in an exact location. Example:
+p{
+  position: absolute;
+  top: 4px;
+  left: 500px;
+  width: 250px;}
+
+###### position: fixed;
+An exact position of text. (top, left, padding, margin, width, background-color)
+
+###### z-index
+"stacking context" equivalent of using the 'bring to front' and 'send to back' features.
+
+###### float
+Floats text to a specific point of a page. pg:370
+
+##### SIDE-BY-SIDE
+p{
+  width: 230px;
+  float: left;
+  margin: 5px;
+  padding: 5px; background-color: #efefef;}
+
+###### clear
+clearing floats move your text boxes to fit on one side. (left, right, both, or none)
+
+###### Parents of Floated Elements
+Problem: Some browsers treat the border of a containing element a 0px.
+Solution: Setting overflow: auto; width: 100%
+
+###### Creating Multi-Column Layouts with Floats
+width, float, margin
+
+Example: column1of2, column2of2 {
+  float: left;
+  width: 300px;
+  margin: 10px;}
+
+Note: Fixed Width Layout is unmoving side to side.
+Liquid Layout elements shifts and changes with screen size; side to side.
+
+###### Multiple Style Sheets
+@import
+Can use a separate &lt;link&gt; on each style sheet.
+Example: 395
+Note: You place a link such as this within the head of your html.
