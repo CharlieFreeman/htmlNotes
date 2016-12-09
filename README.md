@@ -488,3 +488,81 @@ Liquid Layout elements shifts and changes with screen size; side to side.
 Can use a separate &lt;link&gt; on each style sheet.
 Example: 395
 Note: You place a link such as this within the head of your html.
+
+### Chapter 16 "Images"
+###### Controlling Sizes of Images
+img.small {
+  width: 500px;
+  height: 500px;}
+
+  You can have common sizes throughout the css document and label them. Example: small, medium, large.
+
+#### Background Images
+
+  p {background-image: url("imagehere.gif");}
+
+background-repeat & background-attachment:
+Repeat: repeated horizontally and vertically.
+Repeat-x: repeated horizontally only.
+Repeat-y: repeated vertically only.
+No-Repeat: Image only shown once.
+Fixed: BG stays in one position on the page.
+Scroll: BG moves as the user scrolls.
+
+###### background-position: left center;
+left top, left center, left bottom, center top, center center, center bottom, right top, right center, right bottom
+
+#### Background SHORTHAND
+|  | *order* |
+|:---: | :---: |
+| 1. | color |
+| 2. | image |
+| 3. | repeat |
+| 4. | attachment |
+| 5. | position |
+Example:
+body {
+  background: #78109C url("kat.jpg")
+  no-repeat top right;}
+
+##### Image Rollovers & Sprites
+Rollover: The image changes when the user moves over it.
+Sprite: Using the same image over several different parts of an interface.
+
+##### CSS3 Gradients
+background-image: -webkit-linear-gradient(#78109C, #FFF)
+
+##### Contrast of BG Images
+hight contrast, low contrast, screen
+
+### Chapter 17 "HTML5 Layout"
+For an example of a traditional html layout pg: 431
+
+##### Headers Footers
+&lt;header&gt; contains site name and main navigation.
+&lt;footer&gt; could contain links and credits.
+
+###### Navigation
+primary nav. site.
+
+&lt;artical&gt;
+section of a page that could stand alone. They also can nest.
+
+&lt;aside&gt;
+Used inside of an article usually stuff that relates to the artical.
+
+&lt;section&gt;
+Groups related content together such as common articles. Note: This should not be used to "wrap" an entire page. Leave that to a div.
+
+&lt;hgroup&gt; Groups headers together and treats them as the same header.
+
+##### Figures
+&lt;figure&gt;, &lt;figcation&gt;
+This used to group items such as images, videos, graphs, diagrams, code samples, text that relates.
+
+#### &lt;div&gt;
+Grouping together related elements.
+
+#### Helping Older Browsers Understand
+Uses JavaScript HTML5 shiv or HTML5 shim
+Example: 442 Should ask about.
