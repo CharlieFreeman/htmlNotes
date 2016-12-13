@@ -596,7 +596,7 @@ http://validator.w3.org is a good site to validate your page.(html only?)
 
 ### Chapter 2 "Creating Styles & Style Sheets"
 
-PG:35 TIP: Some people learn better by doing rather than reading.Ifyou’dliketotryyourhandatcreatingstyles and style sheets first and then come back here to read up on what you just did, turn to page 43 for a hands-on tutorial.
+PG:35 TIP: Some people learn better by doing rather than reading. If you’d like to try  your hand at creating styles and style sheets first and then come back here to read up on what you just did, turn to page 43 for a hands-on tutorial.
 
 External Style Sheets unified design and a quicker load time.
 
@@ -604,4 +604,82 @@ Internal Style Sheets easy to add to web pages but when you want to make changes
 
 Note: You can place an internal style after the title but most put it after the head. FYI: &lt;style&gt; is required for an HTML5 doc.
 
-Last page: 43
+### Chapter 3 "Selectors: Identifying What to Style"
+
+Page wide styling: Where you can change the entire appearance of parts of a website.
+
+Pinpoint Control: You can use a "class selector"
+Example=The Rating System: &lt;input class="starz"&gt;
+
+ID Selector: Good for Identifying a unique part of a webpage.
+
+Styling Group Tags: Is done when you want multiple elements to have the same attributes. Looks something like this {h1, h3, h5, p}.
+
+An asterisk * is universal selector shorthand for selecting every single tag.Example: * { font-weight: bold; }
+
+##### Ancestor:
+An HTML tag that wraps around another tag is its ancestor.
+##### Descendent:
+A tag inside one or more tags is a descendent.
+##### Parent:
+A parent tag is the closest ancestor of another tag.
+##### Child:
+A tag that’s directly enclosed by another tag is a child.
+##### Sibling:
+Tags that are children of the same tag are called siblings. Next to each other and connected to the same parent.
+
+##### Descendent Selectors
+NOTE: "Anything added to the <ol> or <ul> tag, affects the entire list, while properties added to the <li> tag will affect the individual list items."
+
+##### Module Selectors
+To format a module of code—that is, a collection
+of HTML that serves a particular function on a page.
+
+    &lt;div class="example"&gt;
+      &lt;p class="name"/&gt;
+      &lt;p class="number"/&gt;
+      &lt;p class="grade"/&gt;
+    &lt;div/&gt;
+#####Pseudo Classes and Elements
+a:link before selected
+a:visited a visited link
+a:hover when you hover before clicking
+a:active as you click
+
+#####Styling Paragraph parts
+:first-letter pseudo-element   This is where the first letter of a paragraph is larger and bolder than the rest. Like the start of a book.
+
+:first-line Styles the first line of a paragraph.
+
+:focus Focuses on where the user has clicked or currently at. Example: a form that has text boxes that change depending of where the user is typing.
+
+:before Allows you to add content before your element.
+
+:after Allow you to add content after your element.
+
+::selection Allows you to change content selected. Note there must be 2 : in order for this to work.
+
+#####Attribute Selectors
+$= translates to “ends with.”
+
+The full style might look something like this:
+
+  a[href$=".pdf"] {
+    background: url(doc_icon.png) no-repeat;    
+    padding-left: 15px;
+    };
+
+##### Child Selectors
+For example, the selector body &gt; h1 selects any &lt;h1&gt; tag that’s a child of the &lt;body&gt; tag.
+
+:first-child Allows you to select the very first child in an element.
+
+:last-child Allows you to select the very last child in an element.
+
+nth-child Allows you to select every other child
+
+siblings Allows you to select the siblings of an element.
+
+:not() selector allows you to not select certain parts of text/code. Example: a[href^="http://"]:not([href^="http://mysite.com"])
+
+pg:81 List the limits to the use of the :not() selector.
