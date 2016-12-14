@@ -683,3 +683,114 @@ siblings Allows you to select the siblings of an element.
 :not() selector allows you to not select certain parts of text/code. Example: a[href^="http://"]:not([href^="http://mysite.com"])
 
 pg:81 List the limits to the use of the :not() selector.
+
+### Chapter 4 "Saving Time with Style Inheritance"
+Inheritance: Where CSS properties applied are passed to the nested tag.
+
+Properties that affect the placement of elements on the page or the margins, background colors, and borders of elements aren’t inherited.
+
+### Chapter 5 "Managing Multiple Styles: The Cascade"
+ Cascade is a set of rules for determining which style properties get applied to an element.
+
+ Note: The nearest ancestor wins when in conflict.
+
+ The last style to appear in a sequence  wins if it's a tie.
+
+ Note: that !important works on an individual property, not an entire style, so you need to add !important to the end of each property you wish to make invincible.
+
+ CSS reset is where you remove browser formatting and apply your own. For an example of a bare-bones reset look at page: 116
+Note: This will make all text styles look pretty much the same. You can add your own style defaults to have it appear consistent.
+
+### Chapter 6 "Formatting Text"
+Font File Types
+
+##### EOT.
+Embedded Open Type works only in Internet Explorer. You can use FontSquirrel to to convert to an EOT format.
+##### True Type and Open Type
+.ttf or .otf are the most common font types used by several browsers.
+
+##### WOFF
+Web Open Font Format newer font format used specificly for web.
+
+##### SVG
+Scalable Vector Graphic Limited font file type that is crazy large but can be understood by solder versions of iOSS running Safari 4.1 or earlier.
+
+For a list of font sites: page 134-135
+#### FYI dafont.com is a great site for free fonts.
+
+EOT and WOFF cater to iPhones running Safari 4.1 or older.
+
+It's a good idea to have a separate folder for fonts used on your page.
+
+Look at page 138 for how to add multiple file types of a single font. Note: When you have several different font types your browser reads until it comes to the first file type it can read. The order of type is: .eot, .woof, .ttf, and .svg.
+
+After a font is named and labeled you only have to call the font by the name given to it.
+
+Keep in mind that if is good to pick a font that has both a bold and italic version. For headings it is okay to only have one variant.
+
+You can use keywords for font-size: such as xx-small to xx-large and this is based off of the default fonts size.
+Percentages base font size by the browser or devise being used.
+
+text-transform: uppercase;
+text-transform: none;
+font-variant: small-caps;
+text-decoration: none;
+letter-spacing: -1px;
+
+HSL stands for hue, saturation, and lightness (also sometimes labeled luminance). Example: color: hsl(0, 100%, 50%);
+
+Using px for font size is great because 40px for example is the same across all platforms.
+
+Paragraph Formatting: line-height, text-indent, margin-top/bottom, p:first-letter, p:first-line
+
+For list: list-style-type: square, list-style-type: upper-alpha, list-style-image: url("image/here.jpg")
+### Chapter 7 "Box Model"
+Padding is the space between content.
+Border is the line drawn around each edge of content.
+Background-color
+Margin is what separates one tag from another.
+
+Both margin and padding add space around content.
+
+border: 4px solid #FF0000; is shorthand
+
+creating round corners: border-radius.
+
+box-shadow: inset, 4px, 4px, 8px, rgba(0,0,0,.67);
+box-sizing:
+
+Overflowing Property: visible, scroll, auto, hidden
+
+Float: can float left, right, or none.
+
+### Chapter 8 "Working with Graphics"
+body {  
+  background-image: url(images/bg.gif);
+}
+
+background-repeat: repeat, no-repeat, repeat-x, repeat-y;
+
+background-position: left center, center center, right center, you can also use precise values example :2px 4px; :50% 50%;
+
+On pg:252
+
+### Chapter 9 "Site's Navigation (using link)"
+### Chapter 10 "CSS Transform, Transition and Animations"
+
+*Wednesday 14*
+### Chapter 11 "Formatting Tables and Form"
+### Chapter 12 "Intro to CSS Layout"
+
+
+*Thursday 15*
+###chapter 13 "Building Float Based Components"
+### Chapter 14 "Responsive Design"
+
+*Friday 16*
+### Chapter 15 "Position Elements on a Web Page"
+### Chapter 17 "Improving CSS Habits"
+
+*Monday 19*
+### Flexbox
+
+*Work on Application*
